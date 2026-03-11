@@ -137,6 +137,4 @@ public class PlayerService : IPlayerService
         _logger.LogInformation("Deleting player with ID: {PlayerId}", id);
         await _playerRepository.DeleteAsync(id);
     }
-
-    //Próxima clae continuamos en el numeral 10: Crear DTOs
 }
