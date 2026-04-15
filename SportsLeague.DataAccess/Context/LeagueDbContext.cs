@@ -1,4 +1,5 @@
-﻿using SportsLeague.Domain.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using SportsLeague.Domain.Entities;
 
 namespace SportsLeague.DataAccess.Context
 {

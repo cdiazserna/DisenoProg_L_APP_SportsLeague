@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using SportsLeague.API.DTOs.Request;
 using SportsLeague.API.DTOs.Response;
 using SportsLeague.Domain.Entities;
@@ -12,16 +13,13 @@ namespace SportsLeague.API.Controllers
     {
         private readonly IMatchService _matchService;
         private readonly IMapper _mapper;
-        private readonly ILogger<MatchController> _logger;
 
         public MatchController(
             IMatchService matchService,
-            IMapper mapper,
-            ILogger<MatchController> logger)
+            IMapper mapper)
         {
             _matchService = matchService;
             _mapper = mapper;
-            _logger = logger;
         }
 
         [HttpGet("tournament/{tournamentId}")]

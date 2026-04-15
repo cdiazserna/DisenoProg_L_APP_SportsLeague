@@ -1,4 +1,5 @@
-﻿using SportsLeague.API.DTOs.Request;
+﻿using AutoMapper;
+using SportsLeague.API.DTOs.Request;
 using SportsLeague.API.DTOs.Response;
 using SportsLeague.Domain.Entities;
 
