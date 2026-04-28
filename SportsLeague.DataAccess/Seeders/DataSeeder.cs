@@ -14,28 +14,28 @@ namespace SportsLeague.DataAccess.Seeders
 
             // ═══ 1. EQUIPOS (Liga BetPlay 2026) ═══
             var teams = new List<Team>
-        {
-            new() { Name="Atlético Nacional", City="Medellín", Stadium="Atanasio Girardot" },
-            new() { Name="Independiente Medellín", City="Medellín", Stadium="Atanasio Girardot" },
-            new() { Name="América de Cali", City="Cali", Stadium="Pascual Guerrero" },
-            new() { Name="Deportivo Cali", City="Cali", Stadium="Deportivo Cali" },
-            new() { Name="Junior FC", City="Barranquilla", Stadium="Metropolitano" },
-            new() { Name="Millonarios FC", City="Bogotá", Stadium="El Campín" },
-            new() { Name="Independiente Santa Fe", City="Bogotá", Stadium="El Campín" },
-            new() { Name="Deportes Tolima", City="Ibagué", Stadium="Manuel Murillo Toro" },
-            new() { Name="Atlético Bucaramanga", City="Bucaramanga", Stadium="Alfonso López" },
-            new() { Name="Once Caldas", City="Manizales", Stadium="Palogrande" },
-            new() { Name="Deportivo Pasto", City="Pasto", Stadium="Departamental Libertad" },
-            new() { Name="Deportivo Pereira", City="Pereira", Stadium="Hernán Ramírez Villegas" },
-            new() { Name="Águilas Doradas", City="Rionegro", Stadium="Alberto Grisales" },
-            new() { Name="Boyacá Chicó FC", City="Tunja", Stadium="La Independencia" },
-            new() { Name="Jaguares de Córdoba", City="Montería", Stadium="Jaraguay" },
-            new() { Name="Alianza Valledupar FC", City="Valledupar", Stadium="Armando Maestre" },
-            new() { Name="Fortaleza FC", City="Bogotá", Stadium="Metropolitano de Techo" },
-            new() { Name="Llaneros FC", City="Villavicencio", Stadium="Bello Horizonte" },
-            new() { Name="Cúcuta Deportivo", City="Cúcuta", Stadium="General Santander" },
-            new() { Name="Internacional de Bogotá", City="Bogotá", Stadium="Metropolitano de Techo" },
-        };
+            {
+                new() { Name="Atlético Nacional", City="Medellín", Stadium="Atanasio Girardot" },
+                new() { Name="Independiente Medellín", City="Medellín", Stadium="Atanasio Girardot" },
+                new() { Name="América de Cali", City="Cali", Stadium="Pascual Guerrero" },
+                new() { Name="Deportivo Cali", City="Cali", Stadium="Deportivo Cali" },
+                new() { Name="Junior FC", City="Barranquilla", Stadium="Metropolitano" },
+                new() { Name="Millonarios FC", City="Bogotá", Stadium="El Campín" },
+                new() { Name="Independiente Santa Fe", City="Bogotá", Stadium="El Campín" },
+                new() { Name="Deportes Tolima", City="Ibagué", Stadium="Manuel Murillo Toro" },
+                new() { Name="Atlético Bucaramanga", City="Bucaramanga", Stadium="Alfonso López" },
+                new() { Name="Once Caldas", City="Manizales", Stadium="Palogrande" },
+                new() { Name="Deportivo Pasto", City="Pasto", Stadium="Departamental Libertad" },
+                new() { Name="Deportivo Pereira", City="Pereira", Stadium="Hernán Ramírez Villegas" },
+                new() { Name="Águilas Doradas", City="Rionegro", Stadium="Alberto Grisales" },
+                new() { Name="Boyacá Chicó FC", City="Tunja", Stadium="La Independencia" },
+                new() { Name="Jaguares de Córdoba", City="Montería", Stadium="Jaraguay" },
+                new() { Name="Alianza Valledupar FC", City="Valledupar", Stadium="Armando Maestre" },
+                new() { Name="Fortaleza FC", City="Bogotá", Stadium="Metropolitano de Techo" },
+                new() { Name="Llaneros FC", City="Villavicencio", Stadium="Bello Horizonte" },
+                new() { Name="Cúcuta Deportivo", City="Cúcuta", Stadium="General Santander" },
+                new() { Name="Internacional de Bogotá", City="Bogotá", Stadium="Metropolitano de Techo" },
+            };
 
             context.Teams.AddRange(teams);
             await context.SaveChangesAsync();
@@ -206,12 +206,12 @@ namespace SportsLeague.DataAccess.Seeders
 
             // ═══ 3. ÁRBITROS ═══
             var referees = new List<Referee>
-        {
-            new() { FirstName="Wilmar", LastName="Roldán", Nationality="Colombia" },
-            new() { FirstName="Andrés", LastName="Rojas", Nationality="Colombia" },
-            new() { FirstName="Carlos", LastName="Betancur", Nationality="Colombia" },
-            new() { FirstName="Jhon", LastName="Hinestroza", Nationality="Colombia" },
-        };
+            {
+                new() { FirstName="Wilmar", LastName="Roldán", Nationality="Colombia" },
+                new() { FirstName="Andrés", LastName="Rojas", Nationality="Colombia" },
+                new() { FirstName="Carlos", LastName="Betancur", Nationality="Colombia" },
+                new() { FirstName="Jhon", LastName="Hinestroza", Nationality="Colombia" },
+            };
             context.Referees.AddRange(referees);
             await context.SaveChangesAsync();
 
